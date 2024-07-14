@@ -298,8 +298,8 @@ div.videoCon {
     div.VideoStream {
       width: 60%;
       height: 452px;
-      border-radius: 7px;
-      border: solid 1px $color2;
+      border-radius: 10px;
+      border: solid 2px $btn_c;
       overflow: hidden;
       .Video_Next {
         width: 100%;
