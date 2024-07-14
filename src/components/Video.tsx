@@ -1,57 +1,10 @@
 "use client";
-// import Video from "next-video";
-// import Player from "next-video/player";
 import { useEffect, useState } from "react";
-
-// import Mymedia from "../../videos/lessonone.mp4";
 const MyStream = () => {
   // const [Votp, setVotp] = useState(null);
   // const [VId, setVId] = useState(null);
   // const [otp, setOtp] = useState("");
   // const [playbackInfo, setPlaybackInfo] = useState("");
-
-  // useEffect(() => {
-  //   // Badalkaan waxay u baahan tahay inaad beddesho API-key-gaaga
-  //   fetch(
-  //     "https://dev.vdocipher.com/api/videos/1234567890/3f7b315eeb824f6cb4552e692b437345/otp",
-  //     {
-  //       method: "POST",
-  //       headers: {
-  //         Authorization: `ySuAQeGAEmQx5ECKQ1WcbMk1H2Kqa5ZXerOXT6bOvnl5HskLZtEZAwGrc7S2XqUb`, // Bedel "YOUR_API_SECRET" adoo isticmaalaya API secret kaaga saxda ah
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: { ttl: 300 },
-  //       json: true,
-  //     }
-  //   )
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setOtp(data.otp);
-  //       setPlaybackInfo(data.playbackInfo);
-  //     })
-  //     .catch((error) => console.error("Error:", error));
-  // }, []);
-
-  // console.log(playbackInfo);
-  // // const GetVideo = async () => {
-  // //   const response = await fetch("https://api.vdocipher.com/v2/otp", {
-  // //     method: "GET",
-  // //     headers: {
-  // //       Authorization:
-  // //         "ySuAQeGAEmQx5ECKQ1WcbMk1H2Kqa5ZXerOXT6bOvnl5HskLZtEZAwGrc7S2XqUb",
-  // //       "Content-Type": "application/json",
-  // //     },
-  // //   });
-
-  // //   const data = await response.json();
-  // //   if (response.ok) {
-  // //     // setVId()
-  // //     // setVId()
-  // //     console.log(data);
-  // //   }
-  // // };
-
-  // // GetVideo();
   return (
     <>
       <div className="videoCon">

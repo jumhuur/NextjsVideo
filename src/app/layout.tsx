@@ -5,7 +5,7 @@ import "./globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next-Video And Mux Tokens",
+  title: "Next-Video With Advanced Player",
   description: "Next-Video And Mux Tokens",
 };
 
