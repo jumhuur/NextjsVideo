@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
-export const POST = async () => {
+export const POST = async (req: any, { params }) => {
+  const { Id } = params;
   try {
     const Videos = await fetch(
-      "https://dev.vdocipher.com/api/videos/3f7b315eeb824f6cb4552e692b437345/otp",
+      `https://dev.vdocipher.com/api/videos/${Id}/otp`,
       {
         headers: {
           Accept: "application/json",
@@ -13,7 +14,6 @@ export const POST = async () => {
     );
 
     const data = await Videos.json();
-    console.log(data);
     return new NextResponse(JSON.stringify(data), { status: 200 });
   } catch (Error: any) {
     return new NextResponse(Error.message, { status: 400 });

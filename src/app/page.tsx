@@ -1,9 +1,8 @@
-import MyStream from "@/components/Video";
-
+import VideoList from "@/components/VideoList";
 export default function Home() {
   return (
     <main>
-      <MyStream />
+      <VideoList />
     </main>
   );
 }
