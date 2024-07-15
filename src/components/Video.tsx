@@ -24,7 +24,7 @@ const MyStream = ({ VideoInfo }) => {
         <div className="haye">
           <div className="Lanba_qaybood">
             <VideoList />
-            {VideoInfo && (
+            {VideoInfo ? (
               <div className="videoCon">
                 <div className="haye">
                   <div className="myVideo">
@@ -44,6 +44,10 @@ const MyStream = ({ VideoInfo }) => {
                 <form>
                   <input type="number" name="ttl" value={300} hidden />
                 </form>
+              </div>
+            ) : (
+              <div className="loading">
+                <p>Loading ...</p>
               </div>
             )}
           </div>
