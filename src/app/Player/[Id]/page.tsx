@@ -19,7 +19,7 @@ const Player = ({ params }) => {
     GetMedia();
   }, []);
 
-  const VideoUrl = `https://player.vdocipher.com/v2/?otp=${VideoInfo?.otp}&playbackInfo=${VideoInfo?.playbackInfo}`;
+  // const VideoUrl = `https://player.vdocipher.com/v2/?otp=${VideoInfo?.otp}&playbackInfo=${VideoInfo?.playbackInfo}`;
   return (
     <>
       <MyStream VideoInfo={VideoInfo} />
