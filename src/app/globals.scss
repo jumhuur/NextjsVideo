@@ -328,11 +328,17 @@ div.videoCon {
       flex-flow: wrap column;
       padding: 40px 0px;
       div.Ciwaan {
+        background-color: $color2;
+        margin: 10px 0px;
         padding: 5px 5px;
+        align-self: flex-start;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(1fr);
         h2 {
           color: $color4;
-          @include qoraal-p(18px, $color4);
-          font-weight: normal;
+          @include qoraal-p(20px, $color4);
+          // font-weight: normal;
         }
         p {
           color: $color4;

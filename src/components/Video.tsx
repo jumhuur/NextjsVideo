@@ -28,9 +28,14 @@ const MyStream = ({ VideoInfo }) => {
               <div className="videoCon">
                 <div className="haye">
                   <div className="myVideo">
-                    <div className="Ciwaan">
-                      <h2>Video Title</h2>
-                    </div>
+                    {/* <div className="Ciwaan">
+                      <div className="text">
+                        <h2>
+                          Ciwaanka muuqaal walba oo aad daawanayso halkan ...
+                          <button>Wan dhameeyay</button>
+                        </h2>
+                      </div>
+                    </div> */}
                     <div className="VideoStream">
                       <iframe
                         src={VideoUrl}
