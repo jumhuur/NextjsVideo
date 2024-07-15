@@ -269,79 +269,87 @@ body {
   position: relative;
 }
 
-// video list
-div.videolist {
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px;
-  div.list {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 5%;
-    div.oneVideo {
-      height: 250px;
-      border-radius: 8px;
-      background-color: $btn_c;
-      @include flex-box(column);
-      h3 {
-        color: $color4;
-        @include qoraal-p(18px, $color4);
-        font-weight: normal;
-      }
-      p {
-        color: $color4;
-        @include qoraal-p(13px, $color3);
-        font-weight: normal;
-      }
-      a {
-        width: 50%;
-      }
-      button {
-        @include btn-web(100%);
-        background-color: $color1;
-      }
-    }
-  }
-}
-
 // bilow style
 div.videoCon {
   width: 100%;
   height: 100%;
   // background-color: #004bd6;
-  div.myVideo {
+  div.Lanba_qaybood {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap column;
-    padding: 40px 0px;
-    div.Ciwaan {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    overflow: auto;
+    // video list
+    div.videolist {
+      width: 100%;
+      height: 100vh;
       padding: 10px 10px;
-      h2 {
-        color: $color4;
-        @include qoraal-p(18px, $color4);
-        font-weight: normal;
-      }
-      p {
-        color: $color4;
-        @include qoraal-p(13px, $color3);
-        font-weight: normal;
-      }
-    }
-    div.VideoStream {
-      width: 60%;
-      height: 452px;
-      border-radius: 10px;
-      border: solid 2px $btn_c;
-      overflow: hidden;
-      .Video_Next {
+      overflow: auto;
+      div.list {
         width: 100%;
         height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        div.oneVideo {
+          height: 250px;
+          border-radius: 8px;
+          background-color: $btn_c;
+          @include flex-box(column);
+          h3 {
+            color: $color4;
+            @include qoraal-p(18px, $color4);
+            font-weight: normal;
+          }
+          p {
+            color: $color4;
+            @include qoraal-p(13px, $color3);
+            font-weight: normal;
+          }
+          a {
+            width: 50%;
+          }
+          button {
+            @include btn-web(100%);
+            background-color: $color1;
+          }
+        }
+      }
+    }
+    div.myVideo {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap column;
+      padding: 40px 0px;
+      div.Ciwaan {
+        padding: 5px 5px;
+        h2 {
+          color: $color4;
+          @include qoraal-p(18px, $color4);
+          font-weight: normal;
+        }
+        p {
+          color: $color4;
+          @include qoraal-p(13px, $color3);
+          font-weight: normal;
+        }
+      }
+      div.VideoStream {
+        width: 90%;
+        height: 530px;
+        border-radius: 10px;
+        border: solid 2px $btn_c;
+        overflow: hidden;
+        .Video_Next {
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }

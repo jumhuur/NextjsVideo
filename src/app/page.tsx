@@ -1,8 +1,9 @@
-import VideoList from "@/components/VideoList";
+import HomePage from "@/components/Home";
+
 export default function Home() {
   return (
     <main>
-      <VideoList />
+      <HomePage />
     </main>
   );
 }

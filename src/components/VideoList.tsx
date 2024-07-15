@@ -4,20 +4,18 @@ const VideoList = () => {
   return (
     <>
       <div className="videolist">
-        <div className="haye">
-          <div className="list">
-            {Videos.map((Video) => (
-              <>
-                <div className="oneVideo" key={Video.Id}>
-                  <h3>{Video.Ciwaan}</h3>
-                  <p>Desc</p>
-                  <Link href={`/Player/${Video.Id}`}>
-                    <button>Wotch Now</button>
-                  </Link>
-                </div>
-              </>
-            ))}
-          </div>
+        <div className="list">
+          {Videos.map((Video) => (
+            <>
+              <div className="oneVideo" key={Video.Id}>
+                <h3>{Video.Ciwaan}</h3>
+                <p>Desc</p>
+                <Link href={`/Player/${Video.Id}`}>
+                  <button>Wotch Now</button>
+                </Link>
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </>
