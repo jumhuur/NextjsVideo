@@ -22,7 +22,6 @@ const Player = ({ params }) => {
   const VideoUrl = `https://player.vdocipher.com/v2/?otp=${VideoInfo?.otp}&playbackInfo=${VideoInfo?.playbackInfo}`;
   return (
     <>
-      {/* <MyStream Otp={Votp} PlayBack={VId} />; */}
       <div className="videoCon">
         <div className="haye">
           <div className="myVideo">
